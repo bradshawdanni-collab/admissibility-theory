@@ -11,10 +11,21 @@ It is updated with each meaningful commit. It applies the framework's own maturi
 | Conceptual Architecture | Complete |
 | Constitutional Framework | Complete |
 | Formal Specification | Partial |
-| Doctrine (Maturity Spectrum, One-Page Doctrine) | In Progress |
-| Worked Examples | In Progress |
+| Doctrine (Maturity Spectrum, One-Page Doctrine) | Complete |
+| Worked Examples | Complete (3 examples: geometric routing, null result, governance) |
 | Empirical Validation | In Progress |
 | Independent Replication | Not Yet Achieved |
+
+---
+
+## Commit History
+
+| Commit | Content |
+|---|---|
+| 1 | README.md — front door |
+| 2 | STATUS.md + constitution/ layer + directory stubs |
+| 3 | doctrine/ layer — maturity spectrum and one-page doctrine |
+| 4 | examples/ layer — geometric routing, null result, governance |
 
 ---
 
