@@ -13,6 +13,7 @@ It is updated with each meaningful commit. It applies the framework's own maturi
 | Formal Specification | Partial |
 | Doctrine (Maturity Spectrum, One-Page Doctrine) | Complete |
 | Worked Examples | Complete (3 examples: geometric routing, null result, governance) |
+| Review Infrastructure | Operational |
 | Empirical Validation | In Progress |
 | Independent Replication | Not Yet Achieved |
 
@@ -23,10 +24,27 @@ It is updated with each meaningful commit. It applies the framework's own maturi
 | Commit | Content |
 |---|---|
 | 1 | README.md — front door |
-| 2 | STATUS.md + constitution/ layer + directory stubs |
-| 3 | doctrine/ layer — maturity spectrum and one-page doctrine |
-| 4 | examples/ layer — geometric routing, null result, governance |
+| 2 | Constitutional layer — Four Axioms, Constitution, directory structure |
+| 3 | Doctrine layer — Maturity Spectrum and One-Page Doctrine |
+| 4 | Examples layer — geometric routing, null result, governance |
+| 5 | reviews/ layer — review template and divergence register |
 
 ---
 
-*Last updated: June 2026 — CIL-000.2*
+## Current Boundary
+
+The repository can now receive independent evidence through the review system.
+
+Reviews are primary, append-only evidence.
+
+The divergence register is a derived artifact built from accepted reviews.
+
+Doctrine is not modified through review submission.
+
+No independent reviews have yet been accepted.
+
+Review Infrastructure is operational; empirical validation remains in progress.
+
+---
+
+*Last updated: June 2026 — Commit 5*
