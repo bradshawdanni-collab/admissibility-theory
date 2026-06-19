@@ -1,9 +1,9 @@
 # Independent Review Submission
 
 **Reviewer:** Frank J. Oswald  
-**Project:** [canonical title]  
-**Reviewed release/tag:** [tag]  
-**Manifest or package hash:** [SHA-256]  
+**Project:** Admissibility Theory  
+**Reviewed source commit:** `cb98246aff8c8a22549cd442a9e9af907f64b04a`  
+**Frozen-material manifest:** `independent_reviews/frank_oswald/review_materials/README.md`  
 **Review date:** [YYYY-MM-DD]
 
 ## 1. Executive determination
@@ -12,7 +12,7 @@
 
 ## 2. Strongest contribution
 
-[Identify the most defensible contribution and cite the source.]
+[Identify the most defensible contribution and cite the source file and section.]
 
 ## 3. Material disagreement
 
@@ -26,21 +26,25 @@
 
 ## 5. Circularity and identifiability assessment
 
-[Assess whether admissibility, identifiability, and validation can be evaluated independently of the system under review.]
+[Assess whether admissibility, discriminability, and validation can be evaluated independently of the framework under review.]
 
 ## 6. Failure-mode assessment
 
 [Identify the most consequential failure mode and whether the framework detects, contains, and records it.]
 
-## 7. Evidence gaps
+## 7. Completeness and maturity assessment
+
+[Address the files declared in the root README but absent from the frozen source commit, including the planned formalism, simulations, and provenance artifacts.]
+
+## 8. Evidence gaps
 
 [List evidence required before stronger claims could be made.]
 
-## 8. Recommendation
+## 9. Recommendation
 
-[Accept, minor correction, major revision, insufficient evidence, or reject.]
+[Accept as conceptual architecture, accept with minor corrections, major revision required, insufficient evidence, or reject on structural grounds.]
 
-## 9. Independence confirmation
+## 10. Independence confirmation
 
 I confirm that this evaluation is my own and is subject to the disclosures recorded in `02_REVIEWER_INDEPENDENCE_DECLARATION.md`.
 
