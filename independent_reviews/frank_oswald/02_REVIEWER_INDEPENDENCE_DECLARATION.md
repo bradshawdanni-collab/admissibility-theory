@@ -1,8 +1,8 @@
 # Reviewer Independence Declaration
 
 **Reviewer:** Frank J. Oswald  
-**Project:** [insert canonical project title]  
-**Review package/version:** [insert release tag or hash]  
+**Project:** Admissibility Theory  
+**Review package/version:** Source commit `cb98246aff8c8a22549cd442a9e9af907f64b04a`  
 **Date completed:** [YYYY-MM-DD]
 
 Please confirm each statement.
@@ -11,7 +11,7 @@ Please confirm each statement.
 - [ ] Before accepting this review, I had not previously reviewed the project.
 - [ ] I have not been instructed to reach a preferred conclusion.
 - [ ] I have disclosed any personal, professional, financial, or intellectual conflict that could reasonably affect the review.
-- [ ] I completed the review from the frozen materials identified by release tag, manifest, or cryptographic hash.
+- [ ] I completed the review from the frozen materials identified by source commit `cb98246aff8c8a22549cd442a9e9af907f64b04a`.
 - [ ] My findings are my own and may include material disagreement, rejection, or requests for further evidence.
 
 ## Disclosures
