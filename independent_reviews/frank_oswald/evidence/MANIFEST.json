@@ -1,0 +1,21 @@
+{
+  "package": "independent_reviews/frank_oswald",
+  "prepared_date": "2026-06-20",
+  "repository_target": "bradshawdanni-collab/admissibility-theory",
+  "review_status": "frozen package assembled; evaluation pending",
+  "frozen_source_commit": "cb98246aff8c8a22549cd442a9e9af907f64b04a",
+  "package_branch": "codex/add-frank-oswald-review-folder",
+  "integrity_note": "SHA-256 values cover the review-workspace files. Frozen source materials are commit-pinned and identified by Git blob SHA in review_materials/README.md.",
+  "files": [
+    {"path":"00_REVIEW_SCOPE.md","size_bytes":1507,"sha256":"b66f41dc02d877ed0439ba09b64d0ad40482cc6eb9e72f090ada872ab30393c7"},
+    {"path":"01_READING_ORDER.md","size_bytes":2547,"sha256":"dd1ebb8f72b4929b37903a5c72e1ef9354e9771545a0d3931bddc8fcbc58ddee"},
+    {"path":"02_REVIEWER_INDEPENDENCE_DECLARATION.md","size_bytes":1123,"sha256":"b14b88f2387dbbdcf3d5de5c51962a0f67bb16e258e084a22467006497253e51"},
+    {"path":"03_REVIEW_QUESTIONS.md","size_bytes":2009,"sha256":"6db4087462223f4c05be3e1c3e934873bf0b2c1eb837e8d8cbb6b277b50991e5"},
+    {"path":"04_REVIEW_SUBMISSION_TEMPLATE.md","size_bytes":1866,"sha256":"ff5500bf484ec7284f7516274393d4b2f6a6cb201ab81690630cf7ef7cddba03"},
+    {"path":"05_SUBMISSION_INSTRUCTIONS.md","size_bytes":1497,"sha256":"9d80e992ff0caf0531429456d494f50e4140947a6cdaced75f03f21b70acea7c"},
+    {"path":"README.md","size_bytes":1918,"sha256":"08c83f7aac66141458d0e93f595b92b10e1a2aaa8d386b3cd4fb60788d1d257e"},
+    {"path":"evidence/EVIDENCE_NOTE.md","size_bytes":932,"sha256":"005412181ba8459ad6814206b4644db925c3cce31a0a3c68b579e1af2b20fbf8"},
+    {"path":"review_materials/README.md","size_bytes":5405,"sha256":"81f51e001848f150b645008bb7871029515cd1003bdb72c4c17e4541573e2a0e"},
+    {"path":"submissions/.gitkeep","size_bytes":1,"sha256":"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+  ]
+}
