@@ -1,0 +1,81 @@
+name: White Paper Release Checks
+
+on:
+  pull_request:
+    paths:
+      - 'Guardianship_Doctrine_White_Paper_v2.0.tex'
+      - 'sources.bib'
+      - 'release_manifest.json'
+      - 'appendices/**'
+      - 'figures/**'
+      - '.github/workflows/white-paper-release.yml'
+  push:
+    branches:
+      - white-paper-v2-release
+    paths:
+      - 'Guardianship_Doctrine_White_Paper_v2.0.tex'
+      - 'sources.bib'
+      - 'release_manifest.json'
+      - 'appendices/**'
+      - 'figures/**'
+      - '.github/workflows/white-paper-release.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-release-bundle:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install validation tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq texlive-latex-base texlive-latex-extra texlive-fonts-recommended latexmk
+
+      - name: Verify required release files
+        run: |
+          test -f release_manifest.json
+          test -f Guardianship_Doctrine_White_Paper_v2.0.tex
+          test -f sources.bib
+          test -d appendices
+
+      - name: Validate release manifest JSON
+        run: jq empty release_manifest.json
+
+      - name: Check for unresolved placeholders
+        shell: bash
+        run: |
+          if grep -nE '\[[^]]*(provided text|included here|placeholder|previous sealed version|full mapping|full EQW|worked examples|literature foundations)[^]]*\]' Guardianship_Doctrine_White_Paper_v2.0.tex; then
+            echo 'Unresolved placeholder text detected.'
+            exit 1
+          fi
+
+      - name: Reject unsupported Mermaid package
+        shell: bash
+        run: |
+          if grep -nF '\usepackage{mermaid}' Guardianship_Doctrine_White_Paper_v2.0.tex; then
+            echo 'Unsupported mermaid package reference detected.'
+            exit 1
+          fi
+
+      - name: Verify referenced figures directory
+        shell: bash
+        run: |
+          if grep -Eq '\\includegraphics|\\begin\{figure\}' Guardianship_Doctrine_White_Paper_v2.0.tex; then
+            test -d figures
+          fi
+
+      - name: Compile white paper
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error Guardianship_Doctrine_White_Paper_v2.0.tex
+
+      - name: Verify compiled PDF
+        run: test -f Guardianship_Doctrine_White_Paper_v2.0.pdf
+
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: Guardianship_Doctrine_White_Paper_v2.0
+          path: Guardianship_Doctrine_White_Paper_v2.0.pdf
