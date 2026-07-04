@@ -1,1 +1,23 @@
-{"artifact_name":"Guardianship_Doctrine_White_Paper_v2.0","version":"v2.0","status":"PRE-RELEASE","release_gate":{"placeholder_count":0,"latex_compile":"PASS","pdf_exists":true,"manifest_complete":true,"dependency_check":"PASS","release_status":"READY"}}
+{
+  "artifact_name": "Guardianship_Doctrine_White_Paper_v2.0",
+  "version": "v2.0",
+  "status": "READY",
+  "source_branch": "white-paper-v2-release",
+  "source_commit": "35f8190765da6f5052f582691393ceaafb2b0fe7",
+  "workflow_run_id": 28688997216,
+  "compiled_artifact": {
+    "name": "Guardianship_Doctrine_White_Paper_v2.0",
+    "artifact_id": 8076487417,
+    "size_in_bytes": 182016,
+    "sha256": "93af88f4837cacaaf5dacc45a2370a27b1540c5e8de6b01447a92a4d8315b74d",
+    "expires_at": "2026-10-02T00:16:30Z"
+  },
+  "release_gate": {
+    "placeholder_count": 0,
+    "latex_compile": "PASS",
+    "pdf_exists": true,
+    "manifest_complete": true,
+    "dependency_check": "PASS",
+    "release_status": "READY"
+  }
+}
