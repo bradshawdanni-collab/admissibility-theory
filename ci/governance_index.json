@@ -1,0 +1,34 @@
+{
+  "title": "AURUM-V Governance Index",
+  "version": "0.2.0",
+  "description": "Index of governance artifacts and their admissibility states within the AURUM-V framework.",
+  "rule_set_version": "v1.0.0",
+  "last_updated": "2026-07-14T00:00:00Z",
+  "documents": [
+    {
+      "path": "constitution/four_axioms.md",
+      "category": "Constitution",
+      "description": "The four foundational axioms of the admissibility framework"
+    },
+    {
+      "path": "constitution/constitutional_triad.md",
+      "category": "Constitution",
+      "description": "The constitutional triad governing artifact evaluation"
+    },
+    {
+      "path": "doctrine/one_page_doctrine.md",
+      "category": "Doctrine",
+      "description": "Single-page doctrine summary for the admissibility framework"
+    },
+    {
+      "path": "ci/ci.schema.json",
+      "category": "CI",
+      "description": "JSON schema for governance CI checks"
+    },
+    {
+      "path": "ci/governance_index.json",
+      "category": "CI",
+      "description": "This governance index file"
+    }
+  ]
+}
