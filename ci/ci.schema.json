@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AURUM-V Governance CI Schema",
+  "description": "Schema for continuous integration governance checks in the AURUM-V admissibility framework.",
+  "type": "object",
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the governed artifact"
+    },
+    "workflow_state": {
+      "type": "string",
+      "enum": ["NORMAL", "AMBER", "SILENCE", "PETRIFIED"],
+      "description": "Current admissibility state"
+    },
+    "evidence_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of evidence records attached"
+    },
+    "verification_coverage": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentage of verified evidence"
+    },
+    "all_verified": {
+      "type": "boolean",
+      "description": "True when all evidence is VERIFIED"
+    },
+    "rule_set_version": {
+      "type": "string",
+      "description": "Version of the admissibility rule set"
+    },
+    "decision_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "ID of the latest immutable decision record"
+    }
+  },
+  "required": ["artifact_id", "workflow_state", "evidence_count", "verification_coverage"]
+}
