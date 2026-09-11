@@ -6,7 +6,7 @@
 
 ## Research independence
 
-This repository is an upstream research program. It is not required to consume `aurum-v-kernel` merely in order to develop or review its theory.
+This repository is an upstream research program. It is not required to consume the controlled AURUM-V canonical upstream (`AURUMV_CONTROLLED_CANONICAL_UPSTREAM`) merely in order to develop or review its theory.
 
 Its research conclusions do not automatically alter production governance, execution permissions, or kernel state semantics.
 
